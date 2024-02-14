@@ -1,0 +1,58 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(30, 38%, 92%);
+}
+
+.home {
+    background-color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 14px;
+}
+
+span {
+    font-size: 12px;
+    letter-spacing: 0.4em;
+}
+
+p,
+span,
+h3 {
+    color: gray !important;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+h3 {
+    text-decoration: line-through;
+}
+
+button {
+    color: white !important;
+    background-color: hsl(158, 36%, 37%) !important;
+    width: 90%;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 100%;
+        width: 100%;
+        padding: 1.5em;
+        height: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img {
+        border-radius: 0;
+    }
+}
